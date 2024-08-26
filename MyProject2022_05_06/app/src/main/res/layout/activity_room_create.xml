@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dfdfdf">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:src="@drawable/n_banner_x"
+
+            android:background="#ffffff"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#EFB75B"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="현재 위치"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bmjua_ttf"
+            android:background="#ffffff"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#EFB75B"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/solid_button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/bmjua_ttf"
+            android:text="식당"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/solid_button">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인원수 : "
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua_ttf"
+
+            />
+
+        <EditText
+            android:id="@+id/peopleNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:hint="인원수 작성"
+            android:minHeight="48dp"
+            android:fontFamily="@font/bmjua_ttf"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="최대 인원 : 6명"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua_ttf"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="6"
+        android:background="@drawable/solid_button">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마감시간 설정"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua_ttf"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:timePickerMode="spinner"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/solid_button">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배달비 설정"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bmjua_ttf"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:hint="배달비를 적어주세요"
+            android:minHeight="48dp"
+            android:fontFamily="@font/bmjua_ttf"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="원"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua_ttf"
+            android:layout_marginRight="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnMap"
+            android:text="픽업장소선택"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/solid_button_full_color"
+            android:fontFamily="@font/bmjua_ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <!-- <Button
+             android:layout_width="200dp"
+             android:layout_height="match_parent"
+             android:id="@+id/btnMap"
+             android:layout_gravity="center"
+             android:text="픽업 장소 선택             ( 지도보기 )"
+             android:textStyle="bold"
+             android:textSize="20dp"
+             android:background="@drawable/solid_button"
+             android:fontFamily="@font/bmjua_ttf"
+             />
+             -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="취 소"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/btnCancel"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/solid_button"
+            android:fontFamily="@font/bmjua_ttf"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="만들기"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/btnCreate"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/solid_button_full_color"
+            android:fontFamily="@font/bmjua_ttf"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myproject2022_05_06">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyProject2022_05_06">
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MenuSelect4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuSelect3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuSelect2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuSelect1Activity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD4bfjgzLqHqDqsk9Agfx_jgclviiSSXM8" />
+
+        <activity
+            android:name=".mapLocation"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".RoomCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".listActivity"
+            android:exported="false"/>
+            <!--android:launchMode="singleInstance" />-->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reciteActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
